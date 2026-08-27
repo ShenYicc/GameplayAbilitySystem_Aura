@@ -3,6 +3,7 @@
 
 #include "Character/AuraCharacterBase.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 AAuraCharacterBase::AAuraCharacterBase()
 {
