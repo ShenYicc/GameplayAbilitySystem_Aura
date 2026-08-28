@@ -1,0 +1,65 @@
+[33mcommit 21d93ffc8a29165948c1a358149523d86d642cd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 23:14:14 2026 +0800
+
+    GameMode,SpringArmComponent,CameraComponent And Some Relevant Settings
+
+[33mcommit a74c1e3626179bac02a1438ead334a7e203a8372[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 22:29:25 2026 +0800
+
+    Movement Input
+
+[33mcommit 22d78dc3b808aecf513bbd64834a166127cc68e1[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 21:47:14 2026 +0800
+
+    Aura Player Controller
+
+[33mcommit 09aead8d8c4da8cc7355192c38218e61ff3e9cd4[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 21:25:17 2026 +0800
+
+    Enhanced Input_0
+
+[33mcommit a29fb92ba18bd40efcaca93740a5c773f82a31d4[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 21:11:36 2026 +0800
+
+    Animations Blueprints (Aura and Goblins)
+
+[33mcommit e4aa9e3e009d97c70054773d59c2890bd5f742d6[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 20:50:41 2026 +0800
+
+    Character Blueprint Setup
+
+[33mcommit 50e0e05a8d6ec2ba946790dd216c3fcb377fab4f[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 20:28:41 2026 +0800
+
+    Player And Enemy Character Classes
+
+[33mcommit 7dffa494d36de6add225665970e3af2676d02143[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 20:24:31 2026 +0800
+
+    Player and Enemy Characters
+
+[33mcommit 1c8ee5dab9520901de514b14f0d2b2d7b7b5b2e3[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 16:51:21 2026 +0800
+
+    Delete Comments
+
+[33mcommit a3cce4ac56fc4f4e8be3d02dfb7c2f6e6c7fc848[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 16:42:46 2026 +0800
+
+    Create C++ Class
+
+[33mcommit da579adbd0dbdeabe2c7cb85a5f88b36a8b80eb3[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 16:29:29 2026 +0800
+
+    Initial Project Files
