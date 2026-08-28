@@ -11,6 +11,7 @@ UINTERFACE(MinimalAPI)
 class UEnemyInterface : public UInterface
 {
 	GENERATED_BODY()
+	
 };
 
 /**
