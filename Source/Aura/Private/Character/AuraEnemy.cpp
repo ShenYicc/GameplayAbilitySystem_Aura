@@ -3,6 +3,11 @@
 
 #include "Character/AuraEnemy.h"
 
+AAuraEnemy::AAuraEnemy()
+{
+	
+}
+
 void AAuraEnemy::HighlightActor()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Highlight : %s"), *GetNameSafe(this));
