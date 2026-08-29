@@ -1,0 +1,198 @@
+[33mcommit c86756eb9d137c9dc6016eaea09a8d6f55b57b85[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Sat Aug 29 13:26:13 2026 +0800
+
+    Duration and Periodic Gameplay Effects
+
+[33mcommit edf707724e1c82c88fbe7a8852333e51dacc1c9d[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Sat Aug 29 12:41:03 2026 +0800
+
+    Instant Gameplay Effects
+
+[33mcommit 18254b63628675e17487a60aa0b4308b54f832ae[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Sat Aug 29 12:13:08 2026 +0800
+
+    Effect Actor Improved
+
+[33mcommit e42ea521a4ae71a4d1bc299313cd9ddc86e6746f[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Sat Aug 29 10:15:19 2026 +0800
+
+    Callbacks for Mana Changes and Tests
+
+[33mcommit abc4175a1ab1c74ec03b85d45feed8423063bb77[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Sat Aug 29 10:05:15 2026 +0800
+
+    Listening for Attribute Changes
+
+[33mcommit 2dc1c5aab67cd0ac1f13492e46a47c216ac1173b[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 19:31:15 2026 +0800
+
+    Broadcasting Initial Values
+
+[33mcommit c5f5ffc893e828e352ae34cc8a1d8943701d7076[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 17:51:28 2026 +0800
+
+    Overlay Widget Controller
+
+[33mcommit ea71b753318c8b3d18ef13d0a0671b2adcae4b77[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 16:34:40 2026 +0800
+
+    Aura HUD
+
+[33mcommit b130c7a2dfd88ab9d4e2fd47c8579e43aa9db193[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 16:14:33 2026 +0800
+
+    Health And Mana Globe
+
+[33mcommit d0291b79d3b7a081d518b2d8e19e9eb5acc58b26[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 16:06:49 2026 +0800
+
+    Globe Progress Bar
+
+[33mcommit efd6d49a7af13127103dbe8fed91ace9911d16d6[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 15:29:23 2026 +0800
+
+    Aura User Widget and Widget Controller
+
+[33mcommit 3a1f26bd2a4b2fdd4c5f0ea8cc648b7be25c47c9[m
+Merge: e8b104e b9be302
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 14:57:53 2026 +0800
+
+    ReadMe
+
+[33mcommit e8b104eec2bbefac128a7329e42d462b607138cc[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 14:53:12 2026 +0800
+
+    Effect Actor \ TODO:Change this to apply a Gameplay Effect. For now, using const_cast as a hack! AuraEffectActor.cpp\26
+
+[33mcommit b9be3028610d821946c1553b80f917c7d065a5e6[m
+Author: ShenYicc <115780735+ShenYicc@users.noreply.github.com>
+Date:   Fri Aug 28 13:59:43 2026 +0800
+
+    Add initial README with project title
+
+[33mcommit 229291372b5610de1df4dbb3c62821ac1bcc5fb2[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 13:55:07 2026 +0800
+
+    Health and Mana \ Attribute Accessors
+
+[33mcommit 928d521301363d6add4560b5dde63ec71c98809f[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 13:13:17 2026 +0800
+
+    Init Ability Actor Info
+
+[33mcommit 8c43aeb69f5d9fecbf46deae850ad7c12a15778b[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 12:22:26 2026 +0800
+
+    Replication Mode
+
+[33mcommit 29e78a77abd69f6a2ba3be513bbc98d2e61bdd57[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 12:11:23 2026 +0800
+
+    Constructing ASC and AS
+
+[33mcommit febd69f9cd38885f007f91228aeda287070780bb[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 11:42:58 2026 +0800
+
+    Ability System Component And Attribute Set And Player State
+
+[33mcommit 3e676aef03864f01ba09c929f7121ad135d1bf50[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 10:49:55 2026 +0800
+
+    Pose Process Highlight
+
+[33mcommit bd62b82c895ec0324e03c3995efcebc29de81a7a[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 10:34:35 2026 +0800
+
+    Highlight Enemies
+
+[33mcommit fe67ededd9fc4b652b69ced1e634deee42fc206a[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Fri Aug 28 09:32:40 2026 +0800
+
+    Enemy Interface
+
+[33mcommit 21d93ffc8a29165948c1a358149523d86d642cd6[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 23:14:14 2026 +0800
+
+    GameMode,SpringArmComponent,CameraComponent And Some Relevant Settings
+
+[33mcommit a74c1e3626179bac02a1438ead334a7e203a8372[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 22:29:25 2026 +0800
+
+    Movement Input
+
+[33mcommit 22d78dc3b808aecf513bbd64834a166127cc68e1[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 21:47:14 2026 +0800
+
+    Aura Player Controller
+
+[33mcommit 09aead8d8c4da8cc7355192c38218e61ff3e9cd4[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 21:25:17 2026 +0800
+
+    Enhanced Input_0
+
+[33mcommit a29fb92ba18bd40efcaca93740a5c773f82a31d4[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 21:11:36 2026 +0800
+
+    Animations Blueprints (Aura and Goblins)
+
+[33mcommit e4aa9e3e009d97c70054773d59c2890bd5f742d6[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 20:50:41 2026 +0800
+
+    Character Blueprint Setup
+
+[33mcommit 50e0e05a8d6ec2ba946790dd216c3fcb377fab4f[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 20:28:41 2026 +0800
+
+    Player And Enemy Character Classes
+
+[33mcommit 7dffa494d36de6add225665970e3af2676d02143[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 20:24:31 2026 +0800
+
+    Player and Enemy Characters
+
+[33mcommit 1c8ee5dab9520901de514b14f0d2b2d7b7b5b2e3[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 16:51:21 2026 +0800
+
+    Delete Comments
+
+[33mcommit a3cce4ac56fc4f4e8be3d02dfb7c2f6e6c7fc848[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 16:42:46 2026 +0800
+
+    Create C++ Class
+
+[33mcommit da579adbd0dbdeabe2c7cb85a5f88b36a8b80eb3[m
+Author: 余博文 <3101606982@qq.com>
+Date:   Thu Aug 27 16:29:29 2026 +0800
+
+    Initial Project Files
