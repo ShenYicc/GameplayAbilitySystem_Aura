@@ -4,7 +4,6 @@
 #include "Actor/AuraEffectActor.h"
 
 #include "AbilitySystemComponent.h"
-#include "AbilitySystemInterface.h"
 #include "Components/SceneComponent.h"
 #include "GameplayEffect.h"
 
