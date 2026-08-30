@@ -75,7 +75,6 @@ protected:
 	
 	UPROPERTY()
 	TMap<FActiveGameplayEffectHandle, UAbilitySystemComponent*> ActiveEffectHandles;
-
 	
 private:
 	UPROPERTY(VisibleAnywhere)
