@@ -30,6 +30,7 @@ void UOverlayWidgetController::BindCallbacksToDependencies()
 				GEngine->AddOnScreenDebugMessage(-1, 8.f, FColor::Green,
 					FString::Printf(TEXT("Widget Controller Got Asset Tags: %s"), *Tag.ToString()));
 			}
+			
 		}
 	);
 }
