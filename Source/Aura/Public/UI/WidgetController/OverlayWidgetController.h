@@ -22,6 +22,9 @@ struct FUIWidgetRow : public FTableRowBase
 	FText Message = FText();
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	FColor MessageColor = FColor::White;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	TSubclassOf<UAuraUserWidget> MessageWidget;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
