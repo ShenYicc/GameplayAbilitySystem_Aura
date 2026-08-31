@@ -11,7 +11,7 @@
  * 
  */
 UCLASS()
-class AURA_API AAuraEnemy : public AAuraCharacterBase, public IEnemyInterface
+class AURA_API AAuraEnemy : public AAuraCharacterBase, public IEnemyInterface, public ICombatInterface
 {
 	GENERATED_BODY()
 	
@@ -23,6 +23,11 @@ public:
 	
 	virtual void InitAbilityActorInfo() override;
 	
+	virtual int32 GetCharacterLevel() const override;
+	
 protected:
 	virtual void BeginPlay() override;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Character Class Defaults")
+	int32 Level = 1;
 };

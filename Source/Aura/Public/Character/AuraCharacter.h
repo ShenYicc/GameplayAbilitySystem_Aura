@@ -17,6 +17,8 @@ class AURA_API AAuraCharacter : public AAuraCharacterBase
 public:
 	AAuraCharacter();
 	
+	virtual int32 GetCharacterLevel() const override;
+	
 protected:
 	virtual void PossessedBy(AController* NewController) override;
 	

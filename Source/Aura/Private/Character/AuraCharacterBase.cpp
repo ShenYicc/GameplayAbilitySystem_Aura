@@ -50,3 +50,8 @@ UAttributeSet* AAuraCharacterBase::GetAttributeSet() const
 {
 	return AttributeSet;
 }
+
+int32 AAuraCharacterBase::GetCharacterLevel() const
+{
+	return ICombatInterface::GetCharacterLevel();
+}

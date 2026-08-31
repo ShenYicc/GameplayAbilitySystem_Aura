@@ -5,6 +5,7 @@
 #include "Aura/Aura.h"
 #include "AbilitySystem/AuraAbilitySystemComponent.h"
 #include "AbilitySystem/AuraAttributeSet.h"
+#include "Net/UnrealNetwork.h"
 
 AAuraEnemy::AAuraEnemy()
 {
@@ -50,6 +51,11 @@ void AAuraEnemy::InitAbilityActorInfo()
 		AbilitySystemComponent->InitAbilityActorInfo(this, this);
 		Cast<UAuraAbilitySystemComponent>(AbilitySystemComponent)->OnAbilityActorInfoSet();
 	}
+}
+
+int32 AAuraEnemy::GetCharacterLevel() const
+{
+	return Level;
 }
 
 
