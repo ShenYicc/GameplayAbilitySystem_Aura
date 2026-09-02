@@ -6,8 +6,6 @@
 #include "UI/WidgetController/AuraWidgetController.h"
 #include "AttributeMenuWidgetController.generated.h"
 
-struct FAuraAttributeInfo;
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnAttributeChangedSignature, const FAuraAttributeInfo, AttributeInfo);
 
 /**
  * 
@@ -20,6 +18,4 @@ public:
 	virtual void BroadcastInitialValues() override;
 	
 	virtual void BindCallbacksToDependencies() override;
-	
-	FOnAttributeChangedSignature OnAttributeChanged;
 };
