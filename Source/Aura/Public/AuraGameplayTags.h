@@ -17,7 +17,7 @@ public:
 	static void InitializeNativeGameplayTags();
 	
 	/*
-	 * Primary Attributes
+	 * Primary Attributes Tags
 	 */
 	FGameplayTag Attributes_Primary_Strength;
 	FGameplayTag Attributes_Primary_Intelligence;
@@ -25,7 +25,7 @@ public:
 	FGameplayTag Attributes_Primary_Vigor;
 	
 	/*
-	 * Secondary Attributes
+	 * Secondary Attributes Tags
 	 */
 	FGameplayTag Attributes_Secondary_Armor;
 	FGameplayTag Attributes_Secondary_ArmorPenetration;
@@ -37,6 +37,16 @@ public:
 	FGameplayTag Attributes_Secondary_ManaRegeneration;
 	FGameplayTag Attributes_Secondary_MaxHealth;
 	FGameplayTag Attributes_Secondary_MaxMana;
+	
+	/*
+	 * Input Tags
+	 */
+	FGameplayTag Input_LMB;
+	FGameplayTag Input_RMB;
+	FGameplayTag Input_1;
+	FGameplayTag Input_2;
+	FGameplayTag Input_3;
+	FGameplayTag Input_4;
 
 protected:
 	
