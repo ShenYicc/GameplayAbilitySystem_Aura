@@ -13,6 +13,7 @@ class IEnemyInterface;
 class UInputMappingContext;
 class UInputAction;
 class UAuraAbilitySystemComponent;
+class USplineComponent;
 
 /**
  * 
@@ -57,4 +58,16 @@ private:
 	TObjectPtr<UAuraAbilitySystemComponent> AuraASC;
 	
 	UAuraAbilitySystemComponent* GetASC();
+	
+	FVector CachedDestination = FVector::ZeroVector;
+	float FollowTime = 0.f;
+	float ShortPressThreshold = 0.5f;
+	bool bAutoRunning = false;
+	bool bTargeting = false;
+	
+	UPROPERTY(EditDefaultsOnly, Category = "Auto Running", meta = (AllowPrivateAccess = "true"))
+	float AutoRunningAcceptanceRadius = 50.f;
+	
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<USplineComponent> Spline;
 };
