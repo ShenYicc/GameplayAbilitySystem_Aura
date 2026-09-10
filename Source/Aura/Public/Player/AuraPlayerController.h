@@ -72,4 +72,6 @@ private:
 	TObjectPtr<USplineComponent> Spline;
 	
 	void AutoRun();
+	
+	FHitResult CursorHit;
 };
