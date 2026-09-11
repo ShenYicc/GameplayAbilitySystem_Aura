@@ -21,12 +21,15 @@ class AURA_API AAuraCharacterBase : public ACharacter, public IAbilitySystemInte
 
 public:
 	AAuraCharacterBase();
-
-protected:
 	virtual void BeginPlay() override;
+	
+protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
 	TObjectPtr<USkeletalMeshComponent> Weapon;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	FName WeaponTipSocketName;
 	
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
@@ -61,4 +64,6 @@ public:
 	UAttributeSet* GetAttributeSet() const;
 	
 	virtual int32 GetCharacterLevel() const override;
+	
+	virtual FVector GetCombatSocketLocation() const override;
 };

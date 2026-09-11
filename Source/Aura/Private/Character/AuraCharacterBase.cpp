@@ -67,3 +67,10 @@ int32 AAuraCharacterBase::GetCharacterLevel() const
 {
 	return ICombatInterface::GetCharacterLevel();
 }
+
+FVector AAuraCharacterBase::GetCombatSocketLocation() const
+{
+	check(Weapon);
+	return Weapon->GetSocketLocation(WeaponTipSocketName);
+}
+
