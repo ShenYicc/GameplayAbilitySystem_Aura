@@ -15,7 +15,6 @@ void UAuraProjectileSpell::ActivateAbility(const FGameplayAbilitySpecHandle Hand
 	// If is not Server, now return
 	if (!HasAuthority(&ActivationInfo)) return;
 	
-	
 	if (const ICombatInterface* CombatInterface = Cast<ICombatInterface>(GetAvatarActorFromActorInfo()))
 	{
 		FTransform SpawnTransform;
@@ -28,5 +27,4 @@ void UAuraProjectileSpell::ActivateAbility(const FGameplayAbilitySpecHandle Hand
 		
 		Projectile->FinishSpawning(SpawnTransform);
 	}
-	
 }
