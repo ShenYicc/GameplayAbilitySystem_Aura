@@ -3,6 +3,7 @@
 
 #include "AbilitySystem/Abilities/AuraProjectileSpell.h"
 
+#include "Abilities/Async/AbilityAsync_WaitGameplayEvent.h"
 #include "Actor/AuraProjectile.h"
 #include "Interaction/CombatInterface.h"
 
@@ -12,8 +13,14 @@ void UAuraProjectileSpell::ActivateAbility(const FGameplayAbilitySpecHandle Hand
 {
 	Super::ActivateAbility(Handle, ActorInfo, ActivationInfo, TriggerEventData);
 	
-	// If is not Server, now return
-	if (!HasAuthority(&ActivationInfo)) return;
+	
+}
+
+void UAuraProjectileSpell::SpawnProjectile()
+{
+	// Execute on Server.
+	const bool bIsServer = GetAvatarActorFromActorInfo()->HasAuthority();
+	if (!bIsServer) return;
 	
 	if (const ICombatInterface* CombatInterface = Cast<ICombatInterface>(GetAvatarActorFromActorInfo()))
 	{
