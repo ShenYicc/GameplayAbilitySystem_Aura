@@ -59,11 +59,13 @@ private:
 	
 	
 public:	
-
+	/** Ability System Interface */
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	UAttributeSet* GetAttributeSet() const;
+	/** End Ability System Interface */
 	
+	/** Combat Interface */
 	virtual int32 GetCharacterLevel() const override;
-	
 	virtual FVector GetCombatSocketLocation() const override;
+	/** End Combat Interface */
 };
