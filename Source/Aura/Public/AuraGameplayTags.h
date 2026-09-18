@@ -48,6 +48,10 @@ public:
 	FGameplayTag Input_3;
 	FGameplayTag Input_4;
 
+	/*
+	 * Combat
+	 */
+	FGameplayTag Damage;
 protected:
 	
 private:
