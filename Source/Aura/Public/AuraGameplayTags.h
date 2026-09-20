@@ -52,6 +52,7 @@ public:
 	 * Combat
 	 */
 	FGameplayTag Damage;
+	FGameplayTag Effects_HitReact;
 protected:
 	
 private:
