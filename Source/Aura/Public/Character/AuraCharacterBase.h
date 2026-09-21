@@ -24,6 +24,8 @@ public:
 	AAuraCharacterBase();
 	virtual void BeginPlay() override;
 	
+	UFUNCTION(NetMulticast, Reliable)
+	virtual void MulticastHandleDeath();
 protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
@@ -71,5 +73,6 @@ public:
 	virtual int32 GetCharacterLevel() const override;
 	virtual FVector GetCombatSocketLocation() const override;
 	virtual UAnimMontage* GetHitReactMontage_Implementation() const override;
+	virtual void Die() override;
 	/** End Combat Interface */
 };
