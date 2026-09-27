@@ -19,6 +19,18 @@ public:
 	
 	virtual bool NetSerialize(FArchive& Ar, class UPackageMap* Map, bool& bOutSuccess) override;
 	
+	virtual FAuraGameplayEffectContext* Duplicate() const override
+	{
+		FAuraGameplayEffectContext* NewContext = new FAuraGameplayEffectContext();
+		*NewContext = *this;
+		if (GetHitResult())
+		{
+			// Deep copy to HitResult
+			NewContext->AddHitResult(*GetHitResult(), true);
+		}
+		return NewContext;
+	}
+	
 protected:
 	UPROPERTY()
 	bool bIsBlockedHit = false;
@@ -26,3 +38,13 @@ protected:
 	UPROPERTY()
 	bool bIsCriticalHit = false;
 };
+
+template<>
+struct TStructOpsTypeTraits<FAuraGameplayEffectContext> : public TStructOpsTypeTraitsBase2<FAuraGameplayEffectContext>
+{
+	enum
+	{
+		WithNetSerializer = true,
+		WithCopy = true
+	};
+}; 
