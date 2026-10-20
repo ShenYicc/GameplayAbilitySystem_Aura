@@ -3,6 +3,7 @@
 
 #include "AuraGameplayTags.h"
 #include "GameplayTagsManager.h"
+#include "GameplayTagsSettings.h"
 
 FAuraGameplayTags FAuraGameplayTags::GameplayTags;
 
@@ -45,8 +46,33 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 	 * Combat
 	 */
 	GameplayTags.Damage = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Damage")), FString(TEXT("Damage")));
+	
+	/*
+	 * Damage Types 
+	 */
 	GameplayTags.Damage_Fire = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Damage.Fire")), FString(TEXT("Damage Types : Fire")));
+	GameplayTags.Damage_Lightning = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Damage.Lightning")), FString(TEXT("Damage Types : Lightning")));
+	GameplayTags.Damage_Arcane = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Damage.Arcane")), FString(TEXT("Damage Types : Arcane")));
+	GameplayTags.Damage_Physical = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Damage.Physical")), FString(TEXT("Damage Types : Physical")));
+	
+	/*
+	 * Resistances
+	 */
+	GameplayTags.Attributes_Resistance_Fire = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Attributes.Resistance.Fire")), FString(TEXT("Resistance : Fire")));
+	GameplayTags.Attributes_Resistance_Lightning = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Attributes.Resistance.Lightning")), FString(TEXT("Resistance : Lightning")));
+	GameplayTags.Attributes_Resistance_Arcane = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Attributes.Resistance.Arcane")), FString(TEXT("Resistance : Arcane")));
+	GameplayTags.Attributes_Resistance_Physical = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Attributes.Resistance.Physical")), FString(TEXT("Resistance : Physical")));
+	
+	/*
+	 * Effects
+	 */
 	GameplayTags.Effects_HitReact = UGameplayTagsManager::Get().AddNativeGameplayTag(FName(TEXT("Effects.HitReact")), FString(TEXT("Tag granted when Hit Reacting")));
 	
-	GameplayTags.DamageTypes.Add(GameplayTags.Damage_Fire);
+	/*
+	 * Map of Damage Types to Resistances
+	 */
+	GameplayTags.DamageTypesToResistances.Add(GameplayTags.Damage_Fire, GameplayTags.Attributes_Resistance_Fire);
+	GameplayTags.DamageTypesToResistances.Add(GameplayTags.Damage_Lightning, GameplayTags.Attributes_Resistance_Lightning);
+	GameplayTags.DamageTypesToResistances.Add(GameplayTags.Damage_Arcane, GameplayTags.Attributes_Resistance_Arcane);
+	GameplayTags.DamageTypesToResistances.Add(GameplayTags.Damage_Physical, GameplayTags.Attributes_Resistance_Physical);
 }
